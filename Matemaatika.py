@@ -10,16 +10,9 @@ if keerukus=="Tase 1":
     try:
         for i in range (kogus):
             tehed1=["+", "-"]
-            if arv_1>=arv_2:
-                valitudtehe1=choice(tehed1)
-                print(f"{arv_1} {valitudtehe1} {arv_2} =")
-                vastus=float(input("Anna vastus: "))
-            elif arv_2>arv_1:
-                valitudtehe1=choice(tehed1)
-                print(f"{arv_2} {valitudtehe1} {arv_1} =")
-                vastus=float(input("Anna vastus: "))
-            else: 
-                print("Vääralt sisestatud numbrid.")
+            valitudtehe1=choice(tehed1)
+            print(f"{arv_1} {valitudtehe1} {arv_2} =")
+            vastus=float(input("Anna vastus: "))
             if vastus==eval(str(arv_1)+valitudtehe1+str(arv_2)):
                 print("Tore")
             else: 
@@ -60,7 +53,7 @@ elif keerukus=="Tase 3":
             vastus=float(input("Anna vastus: "))
         else: 
             print("Vääralt sisestatud numbrid.")
-        if vastus==eval(str(arv_1)+valitudtehe2+str(arv_2)):
+        if vastus==eval(str(arv_1)+valitudtehe3+str(arv_2)):
             print("Tore")
         else: 
             print("Vale!")
