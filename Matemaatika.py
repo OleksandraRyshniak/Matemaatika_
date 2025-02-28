@@ -46,6 +46,8 @@ if keerukus=="Tase 1":
             elif vas=="Ei":
                 print(" ")
                 ("Vale")
+            else:
+                print("Vale")
 elif keerukus=="Tase 2":
         for i in range (kogus):
             try:
@@ -64,8 +66,8 @@ elif keerukus=="Tase 2":
                     print("Vale formaat!")
         if hinne==kogus:
             print("Kui soovite jätkata kontrollimist ja uuendamist, sisestage allpool Tase 3, kui mitte, sisestage Ei.")
-            vas__=input("Vastus: ")
-            if vas__=="Tase 3":
+            vas_=input("Vastus: ")
+            if vas_=="Tase 3":
                 for i in range (kogus):
                     try:
                         tehed3=["+", "-", "*", "/", "**"]
@@ -84,7 +86,7 @@ elif keerukus=="Tase 2":
                             print("Vale!")
                     except:
                         print("Vale formaat!")
-            elif vas__=="Ei":
+            elif vas_=="Ei":
                 print(" ")
             else:
                 ("Vale")
@@ -119,4 +121,4 @@ elif 75<= hin<90:
 elif hin>=90:
     print("Sinu hinne on 5.")
 else: 
-    print(" ")
+    print("Vale")
